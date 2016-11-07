@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="lan">
+        <item>第1周</item>
+        <item>第2周</item>
+    </string-array>
+</resources>

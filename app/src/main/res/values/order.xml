@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="languages">
+        <item>第1次实验</item>
+        <item>第2次实验</item>
+        <item>第3次实验</item>
+        <item>第4次实验</item>
+        <item>第5次实验</item>
+    </string-array>
+</resources>

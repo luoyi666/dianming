@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请选择实验项目："
+        android:id="@+id/textView1"
+        android:layout_marginStart="44dp"
+        android:textSize="40px"
+        android:layout_marginBottom="59dp"
+        android:layout_above="@+id/textView9"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner1"
+        android:entries="@array/languages"
+        android:layout_alignTop="@+id/textView1"
+        android:layout_toEndOf="@+id/textView1"
+        android:spinnerMode="dialog"/>
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tv1"
+        android:layout_width="fill_parent"
+        android:layout_height="20sp"
+        android:singleLine="true"
+        style="?android:attr/spinnerDropDownItemStyle"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="实验成绩:"
+        android:id="@+id/textView9"
+        android:textSize="40px"
+        android:layout_marginBottom="117dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView1" />
+
+    <EditText
+        android:layout_width="100px"
+        android:layout_height="50px"
+        android:background="@drawable/bg_edittext"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:text="0"
+        android:layout_alignTop="@+id/textView9"
+        android:layout_toEndOf="@+id/textView9" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="学号："
+        android:id="@+id/textView6"
+        android:textSize="40px"
+        android:layout_marginTop="66dp"
+        android:layout_below="@+id/tv1"
+        android:layout_alignStart="@+id/textView1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="姓名："
+        android:id="@+id/textView7"
+        android:layout_below="@+id/textView6"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_marginTop="42dp"
+        android:textSize="40px" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="行政班："
+        android:id="@+id/textView8"
+        android:layout_below="@+id/textView7"
+        android:layout_alignStart="@+id/textView7"
+        android:layout_marginTop="36dp"
+        android:textSize="40px" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView10"
+        android:layout_alignTop="@+id/textView6"
+        android:layout_alignStart="@+id/textView11"
+        android:textSize="40px" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView11"
+        android:layout_above="@+id/textView8"
+        android:layout_toEndOf="@+id/textView8"
+        android:textSize="40px" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView12"
+        android:layout_alignTop="@+id/textView8"
+        android:layout_toEndOf="@+id/textView8"
+        android:textSize="40px" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button26"
+        android:layout_below="@+id/editText"
+        android:layout_alignStart="@+id/textView9"
+        android:layout_marginTop="39dp"
+        android:text="提交" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="返回"
+        android:id="@+id/button27"
+        android:layout_alignTop="@+id/button26"
+        android:layout_alignStart="@+id/spinner1" />
+
+</RelativeLayout>
